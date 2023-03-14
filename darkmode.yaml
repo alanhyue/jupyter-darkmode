@@ -1,0 +1,6 @@
+Type: Jupyter Notebook Extension
+Compatibility: Jupyter 4.x, 5.x
+Name: Dark Mode
+Main: main.js
+Link: readme.md
+Description: Dark mode for Jupyter Notebook

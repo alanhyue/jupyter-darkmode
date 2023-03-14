@@ -1,0 +1,328 @@
+#header img {
+    filter: brightness(0.5);
+}
+
+.output_area img {
+    filter: invert(0.85);
+}
+
+.rendered_html pre,
+.rendered_html code,
+.rendered_html pre code {
+    background-color: inherit;
+    color: rgb(212, 212, 212);
+    font-family: monospace;
+}
+.rendered_html tbody tr:hover {
+    background-color: rgba(38, 79, 120, 0.5)
+}
+
+
+
+
+.notebook_app {
+    background-color: #0D1117;
+}
+
+#notebook-container {
+    background-color: RGB(40, 40, 40);
+}
+
+
+/* navbar styles */
+
+div#header {
+    background-color: #0D1117;
+    color: rgb(183, 183, 183);
+}
+
+div.navbar {
+    background-color: inherit;
+    color: inherit;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgb(183, 183, 183);
+}
+
+.navbar-default {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus .navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background-color: rgb(37, 37, 37);
+    color: rgb(183, 183, 183);
+}
+
+.dropdown-menu,
+.dropdown-menu>li>a {
+    background-color: rgb(37, 37, 37);
+    color: rgb(183, 183, 183);
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: rgb(9, 71, 113);
+    color: white;
+}
+
+.kernel_idle_icon:before {
+    color: gray;
+}
+
+.kernel_busy_icon:before {
+    color: gray;
+}
+
+body>#header .header-bar {
+    background-color: transparent;
+}
+
+#logout,
+#shutdown {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+
+.select-xs,
+.btn {
+    background-color: transparent;
+    color: gray;
+    border-color: transparent;
+}
+
+/* TOC related styles */
+#toc {
+    color: rgb(212, 212, 212);
+}
+
+#toc_button {
+    background-color: transparent !important;
+    color: gray !important;
+    border-color: transparent !important;
+}
+
+#toc-wrapper {
+    color: rgb(212, 212, 212);
+    background-color: inherit !important;
+    border-color: transparent;
+}
+
+.toc-item-highlight-select {
+    background-color: transparent;
+    color: gold;
+}
+
+#toc-wrapper .toc-item-num,
+.toc-item,
+#toc a,
+#navigate_menu a,
+.toc {
+    color: rgb(212, 212, 212) !important
+}
+
+#toc li>span:hover {
+    background-color: RGB(40, 40, 40) !important;
+}
+
+.select-xs:hover,
+.btn:hover {
+    background-color: transparent;
+    color: gold !important;
+    border-color: transparent;
+}
+
+.toc-item-highlight-select {
+    color: inherit !important;
+    background-color: RGB(40, 40, 40) !important;
+}
+
+.highlight_on_scroll {
+    border-color: RGB(86, 156, 214) !important;
+}
+
+
+
+.CodeMirror {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 15px;
+}
+
+.CodeMirror-selected {
+    background-color: rgb(38, 79, 120) !important;
+}
+
+/* CURSOR */
+/* In edit mode, always display the cursor */
+.CodeMirror-focused div.CodeMirror-cursor {
+    border-left: 2px solid rgb(183, 183, 183);
+    visibility: visible !important;
+}
+
+div.CodeMirror span.CodeMirror-matchingbracket {
+    color: inherit;
+    border: 0.5px solid rgb(183, 183, 183);
+    margin: -0.5px;
+}
+
+/* tables */
+
+tr,
+.rendered_html,
+.rendered_html tbody tr:nth-child(odd) {
+    color: rgb(212, 212, 212);
+    background-color: transparent;
+}
+
+tr {
+    border-bottom: 1px solid gray !important;
+}
+
+.rendered_html th {
+    font-weight: normal;
+}
+
+/* when hovering table rows */
+.rendered_html tbody tr:hover {
+    /* background-color: gray; */
+    /* background-color: transparent;
+    color: rgba(217, 191, 129); */
+    background-color: rgba(38, 79, 120, 0.5)
+}
+
+/* outline of the cell being edited */
+.edit_mode div.cell.selected:before {
+    background: RGB(106, 153, 75) !important;
+}
+
+div.cell.jupyter-soft-selected,
+div.cell.selected.jupyter-soft-selected {
+    background: RGB(106, 153, 75) !important;
+}
+
+div.cell.selected:before,
+div.cell.selected.jupyter-soft-selected:before,
+div.cell.text_cell.selected::before,
+.edit_mode div.cell.text_cell.selected:before,
+div.cell.text_cell.selected:before,
+div.cell.text_cell.selected.jupyter-soft-selected:before {
+    background: RGB(86, 156, 214) !important;
+}
+
+
+div.out_prompt_overlay:hover {
+    background-color: #444;
+    opacity: 0.2;
+}
+
+div.input_prompt,
+div.output_prompt {
+    color: rgb(212, 212, 212);
+}
+
+div.input_area {
+    border: 1px solid #464646;
+    background: transparent;
+}
+
+div.output_stderr {
+    color: rgb(183, 183, 183);
+    background-color: black;
+}
+
+div.output_area pre {
+    color: rgb(183, 183, 183)
+}
+
+div.cell.selected,
+div.cell.selected.jupyter-soft-selected {
+    border-color: gray;
+}
+
+/* code cells interior */
+.CodeMirror-code,
+div.text_cell_render {
+    color: rgb(212, 212, 212);
+}
+
+div.cell.text_cell .CodeMirror-lines {
+    background-color: RGB(30, 30, 30);
+}
+
+div.CodeMirror-lines {
+    background-color: RGB(30, 30, 30);
+}
+
+.cm-s-ipython {
+    color: rgb(212, 212, 212);
+}
+
+.cm-s-ipython span.cm-keyword {
+    color: RGB(86, 156, 214);
+    font-weight: normal;
+}
+
+.cm-s-ipython span.cm-property {
+    color: rgb(212, 212, 212);
+}
+
+.cm-s-ipython span.cm-variable,
+.cm-s-ipython span.cm-variable-2 {
+    color: rgb(212, 212, 212);
+}
+
+.cm-s-ipython span.cm-operator {
+    color: rgb(212, 212, 212);
+}
+
+.cm-s-ipython span.cm-builtin {
+    color: RGB(86, 156, 214);
+}
+
+
+.cm-s-ipython span.cm-string {
+    color: RGB(212, 149, 123);
+}
+
+.cm-s-ipython span.cm-number {
+    color: RGB(189, 216, 168);
+}
+
+.cm-s-ipython span.cm-comment {
+    color: RGB(106, 153, 75);
+    font-style: normal;
+}
+
+.cm-s-default .cm-header {
+    color: rgb(212, 212, 212);
+}
+
+.cm-s-ipython span.cm-def {
+    color: rgb(212, 212, 212);
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(88, 88, 88);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
