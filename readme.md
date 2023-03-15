@@ -4,6 +4,8 @@ Dark Mode
 Adds a Dark Mode apperance for Jupyter Notebook.
 
 ## Preview
+![screencast](screencast.gif)
+
 ![Dark Mode](darkmode.jpg)
 
 ## Installation
