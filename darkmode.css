@@ -446,3 +446,10 @@ div.CodeMirror-lines {
 .ansi-yellow-bg {
     background-color: #745f178a;
 }
+
+/* Execute Time plugin elements */
+.timing_area {
+    color: rgb(183, 183, 183);
+    text-shadow: none;
+    border-top: none;
+}
