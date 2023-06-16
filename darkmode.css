@@ -1,6 +1,48 @@
-#header img {
+/* The Jupyter logo image on the top left corner */
+#header a img {
+    filter: invert(0.5);
+}
+
+/* The title of the notebook */
+span.save_widget span.filename:hover {
+    color: gold;
+    background-color: transparent;
+}
+
+.form-control,
+div.modal-content {
+    color: rgb(212, 212, 212);
+    background-color: #0D1117;
+    border: 1px solid gray;
+}
+
+.modal-header,
+.modal-footer {
+    border: transparent;
+}
+
+.modal-header .close {
+    color: rgb(212, 212, 212);
+    text-shadow: none;
+}
+
+
+/* The Python logo on the top-right corner */
+#kernel_logo_widget .current_kernel_logo {
     filter: brightness(0.5);
 }
+
+/* The Trust information and The kernel name */
+div#notification_trusted,
+#kernel_indicator .kernel_indicator_name {
+    color: rgb(183, 183, 183)
+}
+
+select#cell_type {
+    background-color: #0D1117;
+}
+
+
 
 .output_area img {
     filter: invert(0.85);
@@ -13,6 +55,7 @@
     color: rgb(212, 212, 212);
     font-family: monospace;
 }
+
 .rendered_html tbody tr:hover {
     background-color: rgba(38, 79, 120, 0.5)
 }
@@ -89,11 +132,81 @@ body>#header .header-bar {
     border: none;
 }
 
+button#logout {
+    display: none;
+}
+
 .select-xs,
 .btn {
     background-color: transparent;
     color: gray;
     border-color: transparent;
+}
+
+.select-xs:hover,
+.btn:hover,
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open>.dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open>.dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open>.dropdown-toggle.btn-default.focus .btn:active,
+.btn:focus .btn-default:active:hover,
+.btn-default.active:hover,
+.open>.dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open>.dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open>.dropdown-toggle.btn-default.focus .btn:active,
+.btn:focus .btn-default:active:hover,
+.btn-default.active:hover,
+.open>.dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open>.dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open>.dropdown-toggle.btn-default.focus,
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open>.dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open>.dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open>.dropdown-toggle.btn-default.focus .btn:active,
+.btn:focus {
+    background-color: transparent;
+    color: gold;
+    opacity: 0.7;
+}
+
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open>.dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open>.dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open>.dropdown-toggle.btn-default.focus .btn:active,
+.btn:focus {
+    background-color: #0D1117;
+}
+
+div.out_prompt_overlay.prompt:hover {
+    background-color: RGB(30, 30, 30);
+    opacity: 1;
+}
+
+div.btn.btn-default.output_collapsed {
+    border: 1px solid gray;
 }
 
 /* TOC related styles */
@@ -133,8 +246,11 @@ body>#header .header-bar {
 .select-xs:hover,
 .btn:hover {
     background-color: transparent;
-    color: gold !important;
     border-color: transparent;
+}
+
+.select-xs option:hover {
+    color: gold;
 }
 
 .toc-item-highlight-select {
@@ -325,4 +441,8 @@ div.CodeMirror-lines {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.ansi-yellow-bg {
+    background-color: #745f178a;
 }
